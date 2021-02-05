@@ -1,0 +1,23 @@
+{
+  "name": "martus",
+  "version": "1.0.0",
+  "description": "Este es el codigo fuente de la página web de [Mártus Ropa Católica.](https://www.instagram.com/martustienda/) Esta es una tienda de ropa online que busca ofrecer una marca que está hecha por y para el amor y así evangelizar la cultura desde la ropa.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbbenavidesr/martus.git"
+  },
+  "keywords": [],
+  "author": "Jesus en la web",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbbenavidesr/martus/issues"
+  },
+  "homepage": "https://github.com/jbbenavidesr/martus#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
