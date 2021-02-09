@@ -4,7 +4,8 @@
   "description": "Este es el codigo fuente de la página web de [Mártus Ropa Católica.](https://www.instagram.com/martustienda/) Esta es una tienda de ropa online que busca ofrecer una marca que está hecha por y para el amor y así evangelizar la cultura desde la ropa.",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npx eleventy --serve"
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/jbbenavidesr/martus#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "concurrently": "^5.3.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "sass": "^1.32.6"
   }
 }
