@@ -1,1 +1,81 @@
 @import 'reset';
+
+// Global styles start
+:root {
+    --clr-primary: #B21427;
+    --clr-secondary: #FFB600;
+    --clr-tertiary: #1D1D45;
+    --clr-light: #fff;
+    --clr-dark: #000;
+
+    --spacer: 1rem;
+
+    --ff: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    font-family: var(--ff);
+    font-weight: 200;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    line-height: 1.1;
+    max-width: 30ch;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+a {
+    color: currentColor;
+}
+
+:focus {
+    outline: 1px dotted currentColor;
+    outline-offset: 0.2rem;
+}
+
+p,
+li,
+dl {
+    max-width: 70ch;
+}
+
+article {
+    margin-top: 2.5rem;
+    font-size: 1.125rem;
+}
+
+main:focus {
+    outline: none;
+}
+
+@media (min-width: 40em) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
