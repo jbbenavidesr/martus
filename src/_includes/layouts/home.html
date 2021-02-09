@@ -1,7 +1,92 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-    <article>
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
-    </article>
+    <section class="intro">
+        <div class="wrapper">
+            <header class="visually-hidden">
+                <h1>{{ title }}</h1>
+            </header>
+
+            <div class="intro__content">
+                <img src="{{ intro.image }}" alt="{{ intro.imageAlt }}">
+                <p>{{ intro.summary }}</p>
+                <a href="{{ intro.buttonUrl }}" class="btn">{{ intro.buttonText}}</a>
+            </div>
+
+            <div class="carousel"></div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="wrapper">
+            <header>
+                <h2>Productos</h2>
+            </header>
+            <div class="auto-grid">
+                <article class="product">
+                    <img src="https://source.unsplash.com/250x300/?jesus" alt="">
+                    <h3 class="title">Producto</h3>
+                    <p class="description">Descripción</p>
+                    <p class="price">$40.000 COP</p>
+                </article>
+                <article class="product">
+                    <img src="https://source.unsplash.com/251x300/?jesus" alt="">
+                    <h3 class="title">Producto</h3>
+                    <p class="description">Descripción</p>
+                    <p class="price">$40.000 COP</p>
+                </article>
+                <article class="product">
+                    <img src="https://source.unsplash.com/249x300/?jesus" alt="">
+                    <h3 class="title">Producto</h3>
+                    <p class="description">Descripción</p>
+                    <p class="price">$40.000 COP</p>
+                </article>
+                <article class="product">
+                    <img src="https://source.unsplash.com/250x301/?jesus" alt="">
+                    <h3 class="title">Producto</h3>
+                    <p class="description">Descripción</p>
+                    <p class="price">$40.000 COP</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-preview">
+        <header>
+            <h2>Contenido apostólico</h2>
+        </header>
+        <ul class="categories">
+            <li>
+                <a href="#">Artículos</a>
+            </li>
+            <li>
+                <a href="#">Citas Bíblicas</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="ig">
+        <header>
+            <h2>Instagram</h2>
+        </header>
+        <div class="ig__profile">
+            <div>
+                <img src="" alt="">
+                <a href="http://www.instagram.com/martustienda/" target="_blank" rel="noopener noreferrer">Ver perfil</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <header>
+            <h2>Quienes somos</h2>
+        </header>
+        <ul class="categories">
+            <li>
+                <a href="#">Misión</a>
+            </li>
+            <li>
+                <a href="#">Visión</a>
+            </li>
+        </ul>
+    </section>
 {% endblock %}
