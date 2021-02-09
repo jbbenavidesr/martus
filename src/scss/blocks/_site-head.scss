@@ -1,0 +1,23 @@
+.site-head {
+    padding: 0.6rem 0;
+    background: var(--clr-light);
+    color: var(--clr-tertiary);
+    line-height: 1.1;
+    
+    :focus {
+        outline-color: var(--clr-light);
+    }
+    
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 1rem;
+    }
+
+    &__brand {
+        display: block;
+        width: 3rem;
+    }
+}
