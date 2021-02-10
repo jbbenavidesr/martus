@@ -1,0 +1,13 @@
+.faded-line {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to left, transparent var(--fade-spacing, 5%), var(--faded-clr, var(--clr-tertiary)) 50%, transparent calc(100% - var(--fade-spacing, 5%)));
+    }
+}

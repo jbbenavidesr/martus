@@ -82,9 +82,9 @@ main:focus {
 
 
 // Import blocks
-@import 'blocks/burger-menu';
 @import 'blocks/site-head';
 @import 'blocks/navigation';
+@import 'blocks/burger-menu';
 @import 'blocks/skip-link';
 
 // Import utilities
@@ -93,3 +93,4 @@ main:focus {
 @import 'utilities/site-wrap';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
+@import 'utilities/faded-line';

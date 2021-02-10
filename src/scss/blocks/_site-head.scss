@@ -3,10 +3,8 @@
     background: var(--clr-light);
     color: var(--clr-tertiary);
     line-height: 1.1;
-    
-    :focus {
-        outline-color: var(--clr-light);
-    }
+    margin-bottom: 2em;
+
     
     &__inner {
         display: flex;
@@ -18,6 +16,5 @@
 
     &__brand {
         display: block;
-        width: 3rem;
     }
 }
