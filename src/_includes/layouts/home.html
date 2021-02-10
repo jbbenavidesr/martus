@@ -7,16 +7,18 @@
             </header>
 
             <div class="intro__content">
-                <img src="{{ intro.image }}" alt="{{ intro.imageAlt }}">
+                {% include "partials/logo.svg" %}
                 <p>{{ intro.summary }}</p>
                 <a href="{{ intro.buttonUrl }}" class="btn">{{ intro.buttonText}}</a>
             </div>
 
-            <div class="carousel"></div>
+            <div class="carousel">
+                <img src="https://source.unsplash.com/random?jesus" alt="">
+            </div>
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="productos">
         <div class="wrapper">
             <header>
                 <h2>Productos</h2>
