@@ -1,0 +1,10 @@
+.auto-grid {
+    display: grid;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+
+    @supports (width: min(15.5rem, 100%)) {
+        grid-template-columns: repeat(auto-fit, minmax(min(15.5rem, 100%), 1fr));
+    }
+}

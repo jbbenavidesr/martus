@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+
+     > * + * {
+        margin: calc(var(--spacer) * 3) 0 0 0;
+    }
+
+    &.align {
+        &-center {
+            align-items: center;
+        }
+    }
+
+    @media (min-width: 50em) {
+
+        flex-direction: row;
+        justify-content: space-between;
+    
+
+        > * {
+            flex-basis: 100%;
+        }
+
+        > * + * {
+            margin: 0 0 0 var(--gap, var(--spacer));
+        }
+    }
+}

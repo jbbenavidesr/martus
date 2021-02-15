@@ -18,6 +18,7 @@ body {
     color: var(--clr-dark);
     font-family: var(--ff);
     font-weight: 200;
+    font-size: 1.25rem;
 }
 
 h1,
@@ -43,6 +44,7 @@ h3 {
 
 a {
     color: currentColor;
+    display: inline-block;
 }
 
 :focus {
@@ -61,6 +63,10 @@ article {
     font-size: 1.125rem;
 }
 
+section {
+    padding: calc(1 * var(--spacer)) 0;
+}
+
 main:focus {
     outline: none;
 }
@@ -76,6 +82,10 @@ main:focus {
 
     h3 {
         font-size: 2rem;
+    }
+
+    section {
+        padding: calc(2 * var(--spacer)) 0;
     }
 }
 
@@ -94,3 +104,6 @@ main:focus {
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
 @import 'utilities/faded-line';
+@import 'utilities/text';
+@import 'utilities/flex';
+@import 'utilities/auto-grid'
