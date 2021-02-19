@@ -12,9 +12,7 @@
                 <a href="{{ intro.buttonUrl }}" class="btn">{{ intro.buttonText}}</a>
             </div>
 
-            <div class="carousel">
-                <img src="https://source.unsplash.com/random?jesus" alt="">
-            </div>
+            {% include "partials/carousel.html"%}
         </div>
     </section>
 
@@ -91,4 +89,8 @@
             </li>
         </ul>
     </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/js/carousel.js"></script>
 {% endblock %}

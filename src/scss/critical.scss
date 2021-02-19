@@ -1,16 +1,17 @@
-@import 'reset';
+@import "reset";
 
 // Global styles start
 :root {
-    --clr-primary: #B21427;
-    --clr-secondary: #FFB600;
-    --clr-tertiary: #1D1D45;
+    --clr-primary: #b21427;
+    --clr-secondary: rgb(255, 182, 0);
+    --clr-secondary-shade: rgba(255, 182, 0, 0.4);
+    --clr-tertiary: #1d1d45;
     --clr-light: #fff;
     --clr-dark: #000;
 
     --spacer: 1rem;
 
-    --ff: 'Poppins', sans-serif;
+    --ff: "Poppins", sans-serif;
 }
 
 body {
@@ -89,21 +90,20 @@ main:focus {
     }
 }
 
-
-
 // Import blocks
-@import 'blocks/site-head';
-@import 'blocks/navigation';
-@import 'blocks/burger-menu';
-@import 'blocks/skip-link';
+@import "blocks/site-head";
+@import "blocks/navigation";
+@import "blocks/burger-menu";
+@import "blocks/skip-link";
+@import "blocks/carousel";
 
 // Import utilities
-@import 'utilities/flow';
-@import 'utilities/radius';
-@import 'utilities/site-wrap';
-@import 'utilities/visually-hidden';
-@import 'utilities/wrapper';
-@import 'utilities/faded-line';
-@import 'utilities/text';
-@import 'utilities/flex';
-@import 'utilities/auto-grid'
+@import "utilities/flow";
+@import "utilities/radius";
+@import "utilities/site-wrap";
+@import "utilities/visually-hidden";
+@import "utilities/wrapper";
+@import "utilities/faded-line";
+@import "utilities/text";
+@import "utilities/flex";
+@import "utilities/auto-grid";
