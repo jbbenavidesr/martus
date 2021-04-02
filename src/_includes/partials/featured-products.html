@@ -1,0 +1,17 @@
+<section class="products" id="productos">
+    <div class="wrapper">
+        <header>
+            <h2>Productos</h2>
+        </header>
+        <div class="auto-grid">
+            {% for item in collections.featuredProducts %}
+                <article class="product">
+                    <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" loading="lazy" class="radius"/>
+                    <h3 class="title">{{ item.data.title }}</h3>
+                    <p class="description">{{ item.data.summary }}</p>
+                    <p class="price">{{ item.data.price }}</p>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

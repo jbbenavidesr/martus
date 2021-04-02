@@ -5,51 +5,15 @@
             <header class="visually-hidden">
                 <h1>{{ title }}</h1>
             </header>
-
             <div class="intro__content text-center flow">
                 {% include "partials/logo.svg" %}
                 <p>{{ intro.summary }}</p>
                 <a href="{{ intro.buttonUrl }}" class="btn">{{ intro.buttonText}}</a>
             </div>
-
             {% include "partials/carousel.html"%}
         </div>
     </section>
-
-    <section class="products" id="productos">
-        <div class="wrapper">
-            <header>
-                <h2>Productos</h2>
-            </header>
-            <div class="auto-grid">
-                <article class="product">
-                    <img src="https://source.unsplash.com/250x300/?jesus" alt="">
-                    <h3 class="title">Producto</h3>
-                    <p class="description">Descripción</p>
-                    <p class="price">$40.000 COP</p>
-                </article>
-                <article class="product">
-                    <img src="https://source.unsplash.com/251x300/?jesus" alt="">
-                    <h3 class="title">Producto</h3>
-                    <p class="description">Descripción</p>
-                    <p class="price">$40.000 COP</p>
-                </article>
-                <article class="product">
-                    <img src="https://source.unsplash.com/249x300/?jesus" alt="">
-                    <h3 class="title">Producto</h3>
-                    <p class="description">Descripción</p>
-                    <p class="price">$40.000 COP</p>
-                </article>
-                <article class="product">
-                    <img src="https://source.unsplash.com/250x301/?jesus" alt="">
-                    <h3 class="title">Producto</h3>
-                    <p class="description">Descripción</p>
-                    <p class="price">$40.000 COP</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
+    {% include 'partials/featured-products.html' %}
     <section class="blog-preview">
         <header>
             <h2>Contenido apostólico</h2>
@@ -63,7 +27,6 @@
             </li>
         </ul>
     </section>
-
     <section class="ig">
         <header>
             <h2>Instagram</h2>
@@ -75,7 +38,6 @@
             </div>
         </div>
     </section>
-
     <section class="about-preview">
         <header>
             <h2>Quienes somos</h2>
@@ -90,7 +52,6 @@
         </ul>
     </section>
 {% endblock %}
-
 {% block scripts %}
     <script src="/js/carousel.js"></script>
 {% endblock %}
