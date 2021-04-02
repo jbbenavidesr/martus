@@ -14,42 +14,33 @@
         </div>
     </section>
     {% include 'partials/featured-products.html' %}
-    <section class="blog-preview">
-        <header>
-            <h2>Contenido apostólico</h2>
-        </header>
-        <ul role='list'>
-            <li>
-                <a href="#">Artículos</a>
-            </li>
-            <li>
-                <a href="#">Citas Bíblicas</a>
-            </li>
-        </ul>
-    </section>
-    <section class="ig">
-        <header>
-            <h2>Instagram</h2>
-        </header>
-        <div class="ig__profile">
-            <div>
-                <img src="" alt="">
-                <a href="http://www.instagram.com/martustienda/" target="_blank" rel="noopener noreferrer">Ver perfil</a>
+    <section class="ig clipped">
+        <div class="wrapper flex">
+            <header>
+                <h2>Instagram</h2>
+            </header>
+            <div class="ig__profile">
+                <div>
+                    <img src="" alt="">
+                    <a href="http://www.instagram.com/martustienda/" target="_blank" rel="noopener noreferrer">Ver perfil</a>
+                </div>
             </div>
         </div>
     </section>
-    <section class="about-preview">
-        <header>
-            <h2>Quienes somos</h2>
-        </header>
-        <ul role='list'>
-            <li>
-                <a href="#">Misión</a>
-            </li>
-            <li>
-                <a href="#">Visión</a>
-            </li>
-        </ul>
+    <section class="about-preview clipped">
+        <div class="wrapper flex">
+            <header>
+                <h2>Quienes somos</h2>
+            </header>
+            <ul role='list'>
+                <li>
+                    <a href="#">Misión</a>
+                </li>
+                <li>
+                    <a href="#">Visión</a>
+                </li>
+            </ul>
+        </div>
     </section>
 {% endblock %}
 {% block scripts %}
