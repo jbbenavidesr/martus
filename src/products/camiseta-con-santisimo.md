@@ -1,11 +1,11 @@
 ---
-title: 'Camiseta con cruz'
-summary: 'Una camiseta azul oscuro con una cruz en el pecho.'
+title: 'Camiseta con Santisimo'
+summary: 'Una camiseta blanca con el santisimo en el pecho.'
 price: 40000
-displayOrder: 2
+displayOrder: 1
 featured: true
 hero:
-  image: 'https://source.unsplash.com/250x300/?jesus'
+  image: 'https://source.unsplash.com/249x300/?jesus'
   imageAlt: 'Por ahora es una foto aleatoria que viene de Unsplash'
 gallery:
   - title: 'Creative layouts'
