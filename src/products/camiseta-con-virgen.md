@@ -1,11 +1,11 @@
 ---
-title: 'Camiseta con Santisimo'
-summary: 'Una camiseta blanca con el santisimo en el pecho.'
+title: 'Camiseta con Virgen'
+summary: 'Una camiseta blanca con la virgen maría.'
 price: 40000
-displayOrder: 2
+displayOrder: 3
 featured: true
 hero:
-  image: 'https://source.unsplash.com/249x300/?jesus'
+  image: 'https://source.unsplash.com/250x300/?virgin-mary'
   imageAlt: 'Por ahora es una foto aleatoria que viene de Unsplash'
 gallery:
   - title: 'Creative layouts'

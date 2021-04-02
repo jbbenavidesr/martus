@@ -1,11 +1,11 @@
 ---
-title: 'Camiseta con Santisimo'
-summary: 'Una camiseta blanca con el santisimo en el pecho.'
+title: 'Camiseta con  un mensaje'
+summary: 'Quien no vive para servir, no sirve para vivir'
 price: 40000
-displayOrder: 2
+displayOrder: 4
 featured: true
 hero:
-  image: 'https://source.unsplash.com/249x300/?jesus'
+  image: 'https://source.unsplash.com/250x301/?jesus'
   imageAlt: 'Por ahora es una foto aleatoria que viene de Unsplash'
 gallery:
   - title: 'Creative layouts'

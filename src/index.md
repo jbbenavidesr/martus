@@ -7,6 +7,8 @@ intro:
     buttonUrl: "#productos"
     image: /images/logo.svg
     imageAlt: "Just a random image for now"
+featuredProducts:
+    title: "Productos"
 ---
 
 Por amor y para amar.
