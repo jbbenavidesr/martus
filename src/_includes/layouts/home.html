@@ -14,8 +14,8 @@
         </div>
     </section>
     {% include 'partials/featured-products.html' %}
-    <section class="ig clipped">
-        <div class="wrapper flex">
+    <section class="ig clipped-section">
+        <div class="wrapper flex align-center">
             <header>
                 <h2>Instagram</h2>
             </header>
@@ -27,19 +27,21 @@
             </div>
         </div>
     </section>
-    <section class="about-preview clipped">
-        <div class="wrapper flex">
+    <section class="about-preview clipped-section" data-background="secondary">
+        <div class="wrapper flex align-center">
             <header>
                 <h2>Quienes somos</h2>
             </header>
-            <ul role='list'>
-                <li>
-                    <a href="#">Misión</a>
-                </li>
-                <li>
-                    <a href="#">Visión</a>
-                </li>
-            </ul>
+            <div>
+                <ul role='list'>
+                    <li>
+                        <a href="#">Misión</a>
+                    </li>
+                    <li>
+                        <a href="#">Visión</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 {% endblock %}

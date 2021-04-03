@@ -65,14 +65,14 @@ article {
 }
 
 section {
-    padding: calc(1 * var(--spacer)) 0;
+    padding: calc(2 * var(--spacer)) 0;
 }
 
 main:focus {
     outline: none;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 40rem) {
     h1 {
         font-size: 3rem;
     }
@@ -95,6 +95,7 @@ main:focus {
 @import "blocks/navigation";
 @import "blocks/burger-menu";
 @import "blocks/skip-link";
+@import "blocks/clipped-section";
 
 // Import utilities
 @import "utilities/flow";
