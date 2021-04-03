@@ -1,6 +1,21 @@
 .clipped-section {
     position: relative;
     padding: 8rem 0;
+    color: var(--clr-light);
+    text-align: center;
+
+    header {
+        flex-basis: 60%;
+
+        + * {
+            flex-basis: 40%;
+            font-weight: 800;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 
     &::before {
         content: "";
@@ -20,6 +35,10 @@
     @media (min-width: 50rem) {
         &::before {
             clip-path: polygon(0 0, 50% 0, 65% 100%, 0 100%);
+        }
+
+        header + * {
+            color: var(--clr-dark);
         }
 
         &:nth-child(2n) {
