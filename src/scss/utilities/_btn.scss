@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    border: 3px solid;
+    background: var(--clr-primary);
+    border-radius: 1rem;
+    color: var(--clr-light);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+
+    &:hover,
+    &:focus {
+        background: var(--clr-tertiary);
+        color: var(--clr-secondary);
+    }
+}
