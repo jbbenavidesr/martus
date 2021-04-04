@@ -1,9 +1,14 @@
 .card {
     position: relative;
-    font-size: 1rem;
+    font-size: 0.825rem;
+    overflow: hidden;
 
     .title {
         font-size: 1.25rem;
+    }
+
+    .price {
+        font-weight: 600;
     }
 
     a:focus {

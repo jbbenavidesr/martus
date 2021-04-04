@@ -7,9 +7,9 @@
             {% for item in productGridCollection %}
                 <li class="card radius flow">
                     <div class="card__media">
-                        <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" loading="lazy" class="radius"/>
+                        <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" loading="lazy" class=""/>
                     </div>
-                    <div class="card__content flow">
+                    <div class="card__content flow flow-sm">
                         <h3 class="title">
                             <a href="{{ item.url }}" class="card__link">
                                 {{ item.data.title }}</a>

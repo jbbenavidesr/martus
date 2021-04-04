@@ -94,6 +94,9 @@ main:focus {
     section {
         padding: calc(3 * var(--spacer)) 0;
     }
+    .flex header {
+        margin: 0;
+    }
 }
 
 // Import blocks
