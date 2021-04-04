@@ -13,7 +13,9 @@
             {% include "partials/carousel.html"%}
         </div>
     </section>
-    {% include 'partials/featured-products.html' %}
+    {% set productGridTitle = featuredProducts.title %}
+    {% set productGridCollection = collections.featuredProducts %}
+    {% include 'partials/product-grid.html' %}
     <section class="ig clipped-section">
         <div class="wrapper flex align-center">
             <header>
