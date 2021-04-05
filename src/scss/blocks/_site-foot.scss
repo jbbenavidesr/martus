@@ -4,6 +4,7 @@
         padding-top: 3rem;
         padding-bottom: 3rem;
         color: var(--clr-tertiary);
+        text-align: center;
 
         a {
             text-decoration: none;
@@ -18,8 +19,12 @@
             font-weight: 600;
         }
 
-        > :last-child {
-            text-align: right;
+        @media (min-width: 50em) {
+            text-align: left;
+
+            > :last-child {
+                text-align: right;
+            }
         }
     }
 

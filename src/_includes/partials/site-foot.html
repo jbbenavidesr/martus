@@ -3,21 +3,11 @@
         <div class="site-foot__inner flex align-center faded-line">
             <nav class="site-foot__navigation">
                 <ul role="list">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Our Work</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#">Your account</a>
-                    </li>
+                    {% for item in navigation.items %}
+                        <li>
+                            <a href="{{ item.url }}">{{ item.text }}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </nav>
             <dl>
