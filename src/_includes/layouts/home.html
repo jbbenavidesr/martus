@@ -8,9 +8,9 @@
             <div class="intro__content text-center flow">
                 {% include "partials/logo.svg" %}
                 <p>{{ intro.summary }}</p>
-                <a href="{{ intro.buttonUrl }}" class="btn">{{ intro.buttonText}}</a>
+                <a href="{{ intro.buttonUrl }}" class="btn">{{ intro.buttonText }}</a>
             </div>
-            {% include "partials/carousel.html"%}
+            {% include "partials/carousel.html" %}
         </div>
     </section>
     <section class="products" id="productos" tabindex="-1">
@@ -27,10 +27,13 @@
             <header>
                 <h2>Siguenos en Instagram</h2>
             </header>
-            <div class="ig__profile">
-                <a href="http://www.instagram.com/martustienda/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de instagram">
-                    <img src="/images/ig-profile.svg" alt="" loading="lazy">
-                </a>
+            <div class="ig__profile card radius">
+                <div class="card__content flow">
+                    <img src="/images/ig-profile.svg" alt="" loading="lazy"/>
+                    <a href="http://www.instagram.com/martustienda/" target="_blank" rel="noopener noreferrer" class="card__link">
+                        @martustienda
+                    </a>
+                </div>
             </div>
         </div>
     </section>

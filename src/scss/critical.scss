@@ -78,6 +78,11 @@ main:focus {
     outline: none;
 }
 
+summary {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 40rem) {
     h1 {
         font-size: 3rem;
