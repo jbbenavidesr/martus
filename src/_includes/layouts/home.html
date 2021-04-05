@@ -13,19 +13,24 @@
             {% include "partials/carousel.html"%}
         </div>
     </section>
-    {% set productGridTitle = featuredProducts.title %}
-    {% set productGridCollection = collections.featuredProducts %}
-    {% include 'partials/product-grid.html' %}
+    <section class="products" id="productos" tabindex="-1">
+        <div class="wrapper">
+            <header>
+                <h2>{{ featuredProducts.title }}</h2>
+            </header>
+            {% set productGridCollection = collections.featuredProducts %}
+            {% include 'partials/product-grid.html' %}
+        </div>
+    </section>
     <section class="ig clipped-section">
         <div class="wrapper flex align-center">
             <header>
-                <h2>Nuestro Instagram</h2>
+                <h2>Siguenos en Instagram</h2>
             </header>
             <div class="ig__profile">
-                <div>
-                    <img src="" alt="">
-                    <a href="http://www.instagram.com/martustienda/" target="_blank" rel="noopener noreferrer">Ver perfil</a>
-                </div>
+                <a href="http://www.instagram.com/martustienda/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de instagram">
+                    <img src="/images/ig-profile.svg" alt="" loading="lazy">
+                </a>
             </div>
         </div>
     </section>
@@ -35,12 +40,18 @@
                 <h2>Quienes somos</h2>
             </header>
             <div>
-                <ul role='list'>
+                <ul role='list' class="flow">
                     <li>
-                        <a href="#">Misión</a>
+                        <details>
+                            <summary>Misión</summary>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi nobis pariatur totam assumenda dolorum ipsa molestias impedit fuga molestiae, amet dolore maiores magni error iusto dolores voluptates porro sapiente.
+                        </details>
                     </li>
                     <li>
-                        <a href="#">Visión</a>
+                        <details>
+                            <summary>Visión</summary>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam doloremque eius quidem, corporis perspiciatis repudiandae voluptatibus expedita laudantium numquam, voluptates saepe sapiente ea reprehenderit deleniti. Ipsam sed sequi quibusdam, sunt dolore eos?
+                        </details>
                     </li>
                 </ul>
             </div>

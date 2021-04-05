@@ -1,25 +1,18 @@
-<section class="products" id="productos">
-    <div class="wrapper">
-        <header>
-            <h2>{{ productGridTitle }}</h2>
-        </header>
-        <ul class="auto-grid" role="list">
-            {% for item in productGridCollection %}
-                <li class="card radius flow">
-                    <div class="card__media">
-                        <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" loading="lazy" class=""/>
-                    </div>
-                    <div class="card__content flow flow-sm">
-                        <h3 class="title">
-                            <a href="{{ item.url }}" class="card__link">
-                                {{ item.data.title }}</a>
-                        </h3>
-                        <p class="description">{{ item.data.summary }}</p>
-                        <p class="price">$
-                            {{ item.data.price }}</p>
-                    </div>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-</section>
+<ul class="auto-grid" role="list">
+    {% for item in productGridCollection %}
+        <li class="card radius flow">
+            <div class="card__media">
+                <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" loading="lazy" class=""/>
+            </div>
+            <div class="card__content flow flow-sm">
+                <h3 class="title">
+                    <a href="{{ item.url }}" class="card__link">
+                        {{ item.data.title }}</a>
+                </h3>
+                <p class="description">{{ item.data.summary }}</p>
+                <p class="price">$
+                    {{ item.data.price }}</p>
+            </div>
+        </li>
+    {% endfor %}
+</ul>

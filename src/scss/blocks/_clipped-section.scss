@@ -2,14 +2,16 @@
     position: relative;
     padding: 8rem 0;
     color: var(--clr-light);
-    text-align: center;
 
     header {
-        flex-basis: 60%;
+        flex-basis: 65%;
+        text-align: center;
 
-        + * {
-            flex-basis: 40%;
+        h2 {
             font-weight: 800;
+        }
+        + * {
+            flex-basis: 35%;
 
             a {
                 text-decoration: none;
@@ -28,8 +30,10 @@
         background-color: var(--clr-primary);
     }
 
-    &[data-background="secondary"]::before {
-        background-color: var(--clr-secondary);
+    &[data-background="secondary"] {
+        &::before {
+            background-color: var(--clr-secondary);
+        }
     }
 
     @media (min-width: 50rem) {
@@ -38,7 +42,7 @@
         }
 
         header + * {
-            color: var(--clr-dark);
+            color: var(--clr-tertiary);
         }
 
         &:nth-child(2n) {
