@@ -4,8 +4,8 @@
  * centers the contents
  */
 .wrapper {
-  max-width: 70rem;
-  padding: 0 1.33rem;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: var(--wrap-width, 70rem);
+    padding: 0 1.33rem;
+    margin-left: auto;
+    margin-right: auto;
 }

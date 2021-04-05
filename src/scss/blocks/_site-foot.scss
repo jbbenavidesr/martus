@@ -1,0 +1,32 @@
+.site-foot {
+    --wrap-width: 60rem;
+    &__inner {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: var(--clr-tertiary);
+
+        a {
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        dt {
+            font-weight: 600;
+        }
+
+        > :last-child {
+            text-align: right;
+        }
+    }
+
+    .copyright {
+        max-width: none;
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 1rem;
+    }
+}
