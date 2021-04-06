@@ -1,10 +1,14 @@
 .col-section {
-    columns: 2;
+    columns: 1;
     column-gap: 3rem;
 
     header {
         column-span: all;
         margin-left: 0;
         margin-bottom: 5rem;
+    }
+
+    @media (min-width: 50em) {
+        columns: 2;
     }
 }

@@ -1,24 +1,12 @@
 {
   "items": [
     {
-      "text": "Home",
+      "text": "Página principal",
       "url": "/"
     },
     {
-      "text": "About",
-      "url": "/about-us/"
-    },
-    {
-      "text": "Work",
-      "url": "/work/"
-    },
-    {
-      "text": "Blog",
-      "url": "/blog/"
-    },
-    {
-      "text": "Contact",
-      "url": "/contact/"
+      "text": "¿Quiénes somos?",
+      "url": "/quien-somos/"
     }
   ]
 }
