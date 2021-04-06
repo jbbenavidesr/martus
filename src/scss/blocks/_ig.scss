@@ -1,4 +1,20 @@
 .ig {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0.2;
+        background-image: url(/images/bg-instagram.png),
+            url(/images/bg-instagram.png);
+        background-position: left -15vw bottom -15vw, right -15vw top -10vw;
+        background-size: max(50vw, 30rem), max(30vw, 20rem);
+        background-repeat: no-repeat;
+    }
+
     &__profile {
         text-align: center;
         img {
@@ -7,6 +23,19 @@
             margin: 0 auto;
             border-radius: 50%;
             border: 5px solid var(--clr-tertiary);
+        }
+    }
+
+    @media (min-width: 50em) {
+        &::after {
+            clip-path: polygon(0 0, 50% 0, 65% 100%, 0 100%);
+            background-position: left -15vw bottom -15vw, right 35vw top -10vw;
+        }
+
+        &:nth-child(2n) {
+            &::after {
+                clip-path: polygon(100% 0, 50% 0, 35% 100%, 100% 100%);
+            }
         }
     }
 }
