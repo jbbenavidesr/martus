@@ -1,0 +1,3 @@
+{
+    "permalink": "/catalogo/{{ title | slug }}/index.html"
+}
