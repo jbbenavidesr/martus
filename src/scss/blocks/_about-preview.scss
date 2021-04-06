@@ -1,0 +1,7 @@
+.about-preview {
+    &::after {
+        background-image: url(/images/bg-cruz.png), url(/images/bg-cruz.png);
+        background-position: left -20vw bottom -30vw, right -15vw top -10vw;
+        background-size: max(50vw, 25rem), max(30vw, 15rem);
+    }
+}
