@@ -1,4 +1,12 @@
 {
   "name": "Mártus",
-  "url": "https://www.martustienda.com"
+  "url": "https://www.martustienda.com",
+  "mision": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi nobis pariatur totam assumenda dolorum ipsa molestias impedit fuga molestiae, amet dolore maiores magni error iusto dolores voluptates porro sapiente.",
+  "vision": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam doloremque eius quidem, corporis perspiciatis repudiandae voluptatibus expedita laudantium numquam, voluptates saepe sapiente ea reprehenderit deleniti. Ipsam sed sequi quibusdam, sunt dolore eos?",
+  "social": {
+      "whatsapp": "573234801748",
+      "instagram": "martustienda",
+      "facebook": "martustienda"
+  }
+  
 }
