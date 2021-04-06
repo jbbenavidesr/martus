@@ -16,7 +16,7 @@
 
 body {
     background: var(--clr-light);
-    color: var(--clr-dark);
+    color: var(--clr-tertiary);
     font-family: var(--ff);
     font-weight: 200;
     font-size: 1.25rem;
@@ -128,3 +128,4 @@ summary {
 @import "utilities/flex";
 @import "utilities/auto-grid";
 @import "utilities/btn";
+@import "utilities/col-section";

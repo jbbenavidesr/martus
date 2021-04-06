@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+    <section class="about">
+        <div class="wrapper col-section">
+            <header class="flow">
+                <h1>{{ title }}</h1>
+                <p class="summary">{{ content | safe }}</p>
+            </header>
+            <div class="flow">
+                <h2>
+                    Misión</h2>
+                <p>{{ site.mision }}</p>
+                <h2>
+                    Visión
+                </h2>
+                <p>{{ site.vision }}</p>
+                <h2>Valores</h2>
+                <ul>
+                    <li>Solidaridad</li>
+                    <li>Humildad</li>
+                    <li>Perseverancia</li>
+                </ul>
+                <h2>Responsabilidad social</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, impedit dignissimos repellat voluptatum eum doloribus molestiae pariatur alias vel fuga.</p>
+                <h2>Mártus</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia molestiae possimus placeat sint quos numquam modi fuga perferendis, assumenda commodi vitae qui quia odit nisi, consequuntur totam. Consequatur, quas quasi doloremque eum voluptatibus aspernatur perferendis necessitatibus voluptatum nulla quae veniam numquam id laboriosam distinctio libero culpa dolor. Voluptatum quae labore eius sint ipsam recusandae iusto, eos asperiores officia consectetur.
+            </div>
+        </div>
+    </section>
+{% endblock %}

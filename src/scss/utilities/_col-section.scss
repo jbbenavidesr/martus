@@ -1,0 +1,8 @@
+.col-section {
+    columns: 2;
+
+    header {
+        column-span: all;
+        margin-left: 0;
+    }
+}
