@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <section>
+        <div class="wrapper">
+            <div>
+                {% set productGridCollection = collections.products %}
+                {% include 'partials/product-grid.html' %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
