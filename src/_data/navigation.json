@@ -11,6 +11,10 @@
     {
       "text": "Catálogo",
       "url": "/catalogo/"
+    },
+    {
+      "text": "Contáctanos",
+      "url": "#contacto"
     }
   ]
 }

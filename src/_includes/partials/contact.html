@@ -1,0 +1,33 @@
+{% set contactPrefix = contact %}
+{% if contactContent %}
+    {% set contactPrefix = contactContent %}
+{% endif %}
+<section class="[ contact ]" id="contacto" tabindex="-1">
+    <div class="wrapper">
+        <div class="[ contact__inner ] [ flex ]">
+            <header class="flow">
+                <h2 class="[ contact__heading ] [ headline ]" data-highlight="quaternary">{{ contactPrefix.title }}</h2>
+                <p class="[ contact__summary ] [ measure-short ]">{{ contactPrefix.summary }}</p>
+            </header>
+            <div class="contact__action">
+                <form name="contact" method="POST" data-netlify="true" action="{{ contactPrefix.successURL }}" class="flow">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" value="" autocorrect="off" required/>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" required/>
+                    </div>
+                    <div>
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
