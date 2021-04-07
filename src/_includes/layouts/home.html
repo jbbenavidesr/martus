@@ -16,9 +16,11 @@
     <section class="products" id="productos" tabindex="-1">
         <div class="wrapper">
             <header>
-                <a href="/catalogo/">
-                    <h2>{{ featuredProducts.title }}</h2>
-                </a>
+                <h2 class="text-center measure-long">
+                    <a href="/catalogo/">
+                        {{ featuredProducts.title }}
+                    </a>
+                </h2>
             </header>
             {% set productGridCollection = collections.featuredProducts %}
             {% include 'partials/product-grid.html' %}

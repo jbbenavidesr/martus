@@ -67,7 +67,6 @@ article {
 section {
     padding: calc(2 * var(--spacer)) 0;
     header {
-        width: max-content;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2rem;
@@ -81,6 +80,7 @@ main:focus {
 summary {
     font-weight: 600;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 @media (min-width: 40em) {
@@ -131,3 +131,4 @@ summary {
 @import "utilities/auto-grid";
 @import "utilities/btn";
 @import "utilities/col-section";
+@import "utilities/measure";
