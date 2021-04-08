@@ -79,6 +79,12 @@ class BurgerMenu extends HTMLElement {
                 }
             });
 
+            this.panel.addEventListener("click", (evt) => {
+                if (!evt.target.matches("a")) return;
+
+                this.toggle("closed");
+            });
+
             return;
         }
 
